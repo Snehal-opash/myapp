@@ -4,6 +4,7 @@ import "./App.css";
 import Favorites from "./components/Favorites";
 import Home from "./components/Home";
 import MovieDetail from "./components/MovieDetail";
+import ToDo from "./components/Todo";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/movie/:id" element={<MovieDetail />} />
         <Route path="/favorites" element={<Favorites />} />
+        <Route path="/todo" element={<ToDo />} />
       </Routes>
     </Router>
   );
